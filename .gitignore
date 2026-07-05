@@ -1,0 +1,33 @@
+# Environment / secrets
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local DB / vector DB / generated data
+chroma_db/
+vectorstores/
+uploads/
+extracted_projects/
+
+# Logs
+*.log
+
+# PDFs / sample docs (optional - agar repo me sample PDFs nahi chahiye)
+*.pdf
