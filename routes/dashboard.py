@@ -16,8 +16,10 @@ async def dashboard(user=Depends(get_current_user)):
             "name": user.get("name", "User"),
             "email": user["email"]
         },
-        "total_uploads": len(upload_history),
-        "total_reviews": len(review_history),
+        "statistics": {
+            "total_uploads": len(upload_history),
+            "total_reviews": len(review_history)
+        },
         "recent_uploads": upload_history[-5:],
         "recent_reviews": review_history[-5:]
     }
